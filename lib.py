@@ -4,6 +4,9 @@ def is_creditable(age, salary):
     >>> is_creditable(30, 40_000)
     True
 
+    >>> is_creditable(20, 40_000)
+    False
+
     >>> is_creditable(70, 40_000)
     False
 
@@ -15,13 +18,7 @@ def is_creditable(age, salary):
     min_salary = 30_000
 
     #так делать не нужно
-    if age >= min_age:
-        if age <= max_age:
-            if salary >= min_salary:
-                return True
-            else:
-                return False
-        else:
-            return False
+    if age >= min_age and age <= max_age and salary >= min_salary:
+        return True
     else:
         return False
