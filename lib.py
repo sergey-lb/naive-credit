@@ -17,7 +17,6 @@ def is_creditable(age, salary):
     max_age = 60
     min_salary = 30_000
 
-    #так делать не нужно
     #Alt + Insert - Что-то создать
     #Alt + Enter - Что-то поправить
     if age < min_age:
